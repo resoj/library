@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-    <title>Document</title>
+    <title>Library</title>
 </head>
 <body>
+    <div class="library-container">
+        <div id="title">Library</div>
+        <div class="bookshelf"></div>
+        <button class="add-book-button">Add Book</button>
+    </div>
+    <dialog class="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Title:
+                    <input type="text" id="book-title" required />
+                </label>
+                <label>
+                    Author:
+                    <input type="text" id="book-author" required/>
+                </label>
+                <label>
+                    Pages:
+                    <input type="number" id="pages" required/>
+                </label>
+                <label>
+                    Read:
+                    <input type="checkbox" id="read" value=true/>
+                </label>
+            </p>
+            <div class="submit-button">
+                <input type="submit" id="js-close" value="Add Book" />
+            </div>
+                
+        </form>
+    </dialog>
     
+    <script src="script.js"></script>
 </body>
 </html>
